@@ -1,92 +1,11 @@
 <<<<<<< HEAD
+
 # 🏗👷🏾 Scaffold-ETH Challenges
 
 > learn how to use 🏗 scaffold-eth to create decentralized applications on Ethereum. 🚀
 
 ---
 
-## 🚩 Challenge 0: 🎟 Simple NFT Example
-
-🎫 Create a simple NFT to learn basics of 🏗 scaffold-eth. You'll use 👷‍♀️ HardHat to compile and deploy smart contracts. Then, you'll use a template React app full of important Ethereum components and hooks. Finally, you'll deploy an NFT to a public network to share with friends! 🚀
-
-https://github.com/scaffold-eth/scaffold-eth-challenges/tree/challenge-0-simple-nft
-
----
-
-## 🚩 Challenge 1: 🥩 Decentralized Staking App
-
-🦸 A superpower of Ethereum is allowing you, the builder, to create a simple set of rules that an adversarial group of players can use to work together. In this challenge, you create a decentralized application where users can coordinate a group funding effort. If the users cooperate, the money is collected in a second smart contract. If they defect, the worst that can happen is everyone gets their money back. The users only have to trust the code.
-
-https://github.com/scaffold-eth/scaffold-eth-challenges/tree/challenge-1-decentralized-staking
-
----
-
-## 🚩 Challenge 2: 🏵 Token Vendor
-
-🤖 Smart contracts are kind of like "always on" vending machines that anyone can access. Let's make a decentralized, digital currency. Then, let's build an unstoppable vending machine that will buy and sell the currency. We'll learn about the "approve" pattern for ERC20s and how contract to contract interactions work.
-
-https://github.com/scaffold-eth/scaffold-eth-challenges/tree/challenge-2-token-vendor
-
----
-
-## 🚩 Challenge 3: 🎲 Dice Game
-
-🎰 Randomness is tricky on a public deterministic blockchain.  In this challenge you will explore creating random numbers using block hash and how that may be exploitable.  Attack the dice game with your own contract by predicting the randomness ahead of time to always roll a winner!
-
-https://github.com/scaffold-eth/scaffold-eth-challenges/tree/challenge-3-dice-game
-
----
-
-## 🎉 Checkpoint: Eligible to join 🏰️ BuidlGuidl
-
-The BuidlGuidl is a curated group of Ethereum builders creating products, prototypes, and tutorials to enrich the web3 ecosystem. A place to show off your builds and meet other builders. Start crafting your Web3 portfolio by submitting your DEX, Multisig or SVG NFT build.
-
-https://buidlguidl.com/
-
----
-
-## ⚖️ Build a DEX Challenge
-
-💵 Build an exchange that swaps ETH to tokens and tokens to ETH. 💰 This is possible because the smart contract holds reserves of both assets and has a price function based on the ratio of the reserves. Liquidity providers are issued a token that represents their share of the reserves and fees...
-
-DEX Telegram Channel: https://t.me/+_NeUIJ664Tc1MzIx
-
-https://github.com/scaffold-eth/scaffold-eth-challenges/tree/challenge-4-dex
-
----
-
-## 📺 State Channel Application Challenge
-
-🛣️ The Ethereum blockchain has great decentralization & security properties but these properties come at a price: transaction throughput is low, and transactions can be expensive. This makes many traditional web applications infeasible on a blockchain... or does it? State channels look to solve these problems by allowing participants to securely transact off-chain while keeping interaction with Ethereum Mainnet at a minimum.
-
-State Channels Telegram Channel: https://t.me/+k0eUYngV2H0zYWUx
-
-https://github.com/scaffold-eth/scaffold-eth-challenges/tree/challenge-9-state-channels
-
----
-
-## 👛 Multisig Wallet Challenge
-
-👩‍👩‍👧‍👧 Using a smart contract as a wallet we can secure assets by requiring multiple accounts to "vote" on transactions. The contract will keep track of transactions in an array of structs and owners will confirm or reject each one. Any transaction with enough confirmations can "execute".
-
-Multisig Telegram Channel: https://t.me/+mkNNF_yHsK8yMTcx
-
-https://github.com/scaffold-eth/scaffold-eth-challenges/tree/challenge-5-multi-sig
-
----
-
-## 🎁 SVG NFT 🎫 Building Cohort Challenge
-
-🧙 Tinker around with cutting edge smart contracts that render SVGs in Solidity. 🧫 We quickly discovered that the render function needs to be public... 🤔 This allows NFTs that own other NFTs to render their stash. Just wait until you see an Optimistic Loogie and a Fancy Loogie swimming around in the same Loogie Tank!
-
-SVG NFT Telegram Channel: https://t.me/+J9PRea84c1U0Mzkx
-
-https://github.com/scaffold-eth/scaffold-eth-challenges/tree/challenge-6-svg-nft
-
----
-
-### 💬 Support Chat
-=======
 # 🏗 scaffold-eth | 🏰 BuidlGuidl
 
 ## 🚩 Challenge 9: A State Channel Application
@@ -160,7 +79,7 @@ Like the [token vendor challenge](https://speedrunethereum.com/challenge/token-v
 
 > 👁 `contract Streamer` inherits `Ownable` with the `is` keyword. `Ownable` comes from [openzeppelin-contracts](https://github.com/OpenZeppelin/openzeppelin-contracts) - a collection of high quality smart contract library code.
 
-> 📝 In `packages/hardhat/deploy/00_deploy_streamer.js`, uncomment the lines of code that deploy the contract and transfer ownership.  You will need to enter your own front end address.
+> 📝 In `packages/hardhat/deploy/00_deploy_streamer.js`, uncomment the lines of code that deploy the contract and transfer ownership. You will need to enter your own front end address.
 
 You'll have to redeploy with `yarn deploy --reset`.
 
@@ -303,7 +222,7 @@ The `defundChannel()` function should:
 
 ---
 
-### Checkpoint 5: 🚢 Ship it 🚁
+### Checkpoint 7: 🚢 Ship it 🚁
 
 📡 Edit the `defaultNetwork` to [your choice of public EVM networks](https://ethereum.org/en/developers/docs/networks/) in `packages/hardhat/hardhat.config.js`
 
@@ -317,7 +236,7 @@ The `defundChannel()` function should:
 
 ---
 
-### Checkpoint 6: 🎚 Frontend 🧘‍♀️
+### Checkpoint 8: 🎚 Frontend 🧘‍♀️
 
 > 📝 Edit the `targetNetwork` in `App.jsx` (in `packages/react-app/src`) to be the public network where you deployed your smart contract.
 
@@ -335,12 +254,13 @@ The `defundChannel()` function should:
 
 ---
 
-### Checkpoint 7: 📜 Contract Verification
+### Checkpoint 9: 📜 Contract Verification
 
 Update the api-key in packages/hardhat/package.json file. You can get your key [here](https://etherscan.io/myapikey).
 
 ![Screen Shot 2021-11-30 at 10 21 01 AM](https://user-images.githubusercontent.com/9419140/144075208-c50b70aa-345f-4e36-81d6-becaa5f74857.png)
->>>>>>> challenge-9-state-channels
+
+> > > > > > > challenge-9-state-channels
 
 > Now you are ready to run the `yarn verify --network your_network` command to verify your contracts on etherscan 🛰
 
